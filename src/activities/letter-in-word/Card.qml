@@ -45,7 +45,7 @@ Item {
         id: cardImage
         anchors.top: wordPic.bottom
         anchors.topMargin: -30 * ApplicationInfo.ratio
-        sourceSize.width: cardItem.width - 10
+        sourceSize.width: cardItem.width - 20
         fillMode: Image.PreserveAspectFit
         source: Activity.resUrl2 + "cloud.svg"
         z: (state == 'scaled') ? 1 : -1
@@ -75,7 +75,7 @@ Item {
                 name: "scaled"; when: selected && mouseActive
                 PropertyChanges {
                     target: cardItem
-                    scale: 1.5
+                    scale: 1.3
                     z: 2
                 }
             }
